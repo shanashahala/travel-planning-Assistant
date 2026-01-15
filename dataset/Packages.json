@@ -1,0 +1,1311 @@
+[
+  {
+    "package_id": "PKG01",
+    "package_type": "beach",
+    "destination": "Goa",
+    "duration_days": 4,
+    "price": {
+      "solo": 18000,
+      "couple": 32000,
+      "family_4": 50000
+    },
+    "best_season": "oct-mar",
+    "day_plans": [
+      {
+        "day": 1,
+        "primary_plan": "Arrival and North Goa sightseeing",
+        "alternative_plans": ["Relax at hotel", "Local market visit"]
+      },
+      {
+        "day": 2,
+        "primary_plan": "Beach hopping and water sports",
+        "alternative_plans": ["Cruise ride", "Cafe hopping"]
+      },
+      {
+        "day": 3,
+        "primary_plan": "South Goa sightseeing",
+        "alternative_plans": ["Temple visit", "Spa day"]
+      },
+      {
+        "day": 4,
+        "primary_plan": "Shopping and departure",
+        "alternative_plans": ["Leisure morning", "Museum visit"]
+      }
+    ]
+  },
+
+  {
+    "package_id": "PKG02",
+    "package_type": "hills",
+    "destination": "Manali",
+    "duration_days": 5,
+    "price": {
+      "solo": 22000,
+      "couple": 40000,
+      "family_4": 65000
+    },
+    "best_season": "mar-jun",
+    "day_plans": [
+      {
+        "day": 1,
+        "primary_plan": "Arrival and Mall Road walk",
+        "alternative_plans": ["Cafe hopping", "Rest at hotel"]
+      },
+      {
+        "day": 2,
+        "primary_plan": "Solang Valley activities",
+        "alternative_plans": ["Snow point visit", "Photography tour"]
+      },
+      {
+        "day": 3,
+        "primary_plan": "Rohtang Pass",
+        "alternative_plans": ["Atal Tunnel", "Short trek"]
+      },
+      {
+        "day": 4,
+        "primary_plan": "Hadimba Temple and local sightseeing",
+        "alternative_plans": ["River rafting", "Spa day"]
+      },
+      {
+        "day": 5,
+        "primary_plan": "Departure",
+        "alternative_plans": ["Shopping", "Leisure breakfast"]
+      }
+    ]
+  },
+
+  {
+    "package_id": "PKG03",
+    "package_type": "heritage",
+    "destination": "Jaipur",
+    "duration_days": 3,
+    "price": {
+      "solo": 14000,
+      "couple": 26000,
+      "family_4": 42000
+    },
+    "best_season": "oct-feb",
+    "day_plans": [
+      {
+        "day": 1,
+        "primary_plan": "Amber Fort and Jal Mahal",
+        "alternative_plans": ["Nahargarh Fort", "Local bazaar"]
+      },
+      {
+        "day": 2,
+        "primary_plan": "City Palace and Hawa Mahal",
+        "alternative_plans": ["Museum visit", "Cultural show"]
+      },
+      {
+        "day": 3,
+        "primary_plan": "Shopping and departure",
+        "alternative_plans": ["Heritage walk", "Cafe visit"]
+      }
+    ]
+  },
+
+  {
+    "package_id": "PKG04",
+    "package_type": "honeymoon",
+    "destination": "Munnar",
+    "duration_days": 4,
+    "price": {
+      "solo": 20000,
+      "couple": 36000,
+      "family_4": 55000
+    },
+    "best_season": "sep-mar",
+    "day_plans": [
+      {
+        "day": 1,
+        "primary_plan": "Arrival and tea garden walk",
+        "alternative_plans": ["Leisure evening", "Resort stay"]
+      },
+      {
+        "day": 2,
+        "primary_plan": "Eravikulam National Park",
+        "alternative_plans": ["Photo point visit", "Nature walk"]
+      },
+      {
+        "day": 3,
+        "primary_plan": "Mattupetty Dam and Echo Point",
+        "alternative_plans": ["Spa day", "Shopping"]
+      },
+      {
+        "day": 4,
+        "primary_plan": "Departure",
+        "alternative_plans": ["Sunrise view", "Relaxation"]
+      }
+    ]
+  },
+
+  {
+    "package_id": "PKG05",
+    "package_type": "adventure",
+    "destination": "Rishikesh",
+    "duration_days": 3,
+    "price": {
+      "solo": 15000,
+      "couple": 27000,
+      "family_4": 42000
+    },
+    "best_season": "feb-jun",
+    "day_plans": [
+      {
+        "day": 1,
+        "primary_plan": "Arrival and Ganga Aarti",
+        "alternative_plans": ["Temple visit", "Leisure walk"]
+      },
+      {
+        "day": 2,
+        "primary_plan": "River rafting and adventure sports",
+        "alternative_plans": ["Yoga session", "Cafe hopping"]
+      },
+      {
+        "day": 3,
+        "primary_plan": "Local sightseeing and departure",
+        "alternative_plans": ["Shopping", "Meditation"]
+      }
+    ]
+  },
+
+  {
+    "package_id": "PKG06",
+    "package_type": "pilgrimage",
+    "destination": "Varanasi",
+    "duration_days": 3,
+    "price": {
+      "solo": 12000,
+      "couple": 22000,
+      "family_4": 36000
+    },
+    "best_season": "oct-mar",
+    "day_plans": [
+      {
+        "day": 1,
+        "primary_plan": "Kashi Vishwanath Temple",
+        "alternative_plans": ["Local ghats visit", "Rest"]
+      },
+      {
+        "day": 2,
+        "primary_plan": "Ganga Aarti and boat ride",
+        "alternative_plans": ["Sarnath visit", "Temple hopping"]
+      },
+      {
+        "day": 3,
+        "primary_plan": "Shopping and departure",
+        "alternative_plans": ["Heritage walk", "Museum visit"]
+      }
+    ]
+  },
+
+  {
+    "package_id": "PKG07",
+    "package_type": "beach",
+    "destination": "Andaman",
+    "duration_days": 5,
+    "price": {
+      "solo": 45000,
+      "couple": 80000,
+      "family_4": 125000
+    },
+    "best_season": "oct-may",
+    "day_plans": [
+      {
+        "day": 1,
+        "primary_plan": "Cellular Jail visit",
+        "alternative_plans": ["Corbyn’s Cove", "Light & Sound skip"]
+      },
+      {
+        "day": 2,
+        "primary_plan": "Radhanagar Beach",
+        "alternative_plans": ["Elephant Beach", "Leisure"]
+      },
+      {
+        "day": 3,
+        "primary_plan": "Scuba diving",
+        "alternative_plans": ["Snorkeling", "Glass boat"]
+      },
+      {
+        "day": 4,
+        "primary_plan": "Neil Island sightseeing",
+        "alternative_plans": ["Cycling", "Beach hopping"]
+      },
+      {
+        "day": 5,
+        "primary_plan": "Departure",
+        "alternative_plans": ["Shopping", "Museum"]
+      }
+    ]
+  },
+  {
+    "package_id": "PKG08",
+    "package_type": "hills",
+    "destination": "Ooty",
+    "duration_days": 3,
+    "price": {
+      "solo": 16000,
+      "couple": 30000,
+      "family_4": 46000
+    },
+    "best_season": "oct-jun",
+    "day_plans": [
+      {
+        "day": 1,
+        "primary_plan": "Arrival and Botanical Garden",
+        "alternative_plans": ["Ooty Lake", "Rest at hotel"]
+      },
+      {
+        "day": 2,
+        "primary_plan": "Doddabetta Peak and Tea Factory",
+        "alternative_plans": ["Pine Forest", "Photography tour"]
+      },
+      {
+        "day": 3,
+        "primary_plan": "Shopping and departure",
+        "alternative_plans": ["Toy train ride", "Leisure breakfast"]
+      }
+    ]
+  },
+  {
+    "package_id": "PKG09",
+    "package_type": "heritage",
+    "destination": "Hampi",
+    "duration_days": 3,
+    "price": {
+      "solo": 15000,
+      "couple": 28000,
+      "family_4": 44000
+    },
+    "best_season": "oct-feb",
+    "day_plans": [
+      {
+        "day": 1,
+        "primary_plan": "Virupaksha Temple and Hampi Bazaar",
+        "alternative_plans": ["River walk", "Local cafes"]
+      },
+      {
+        "day": 2,
+        "primary_plan": "Stone Chariot and Vittala Temple",
+        "alternative_plans": ["Cycling tour", "Museum visit"]
+      },
+      {
+        "day": 3,
+        "primary_plan": "Sunset at Hemakuta Hill and departure",
+        "alternative_plans": ["Coracle ride", "Leisure time"]
+      }
+    ]
+  },
+  {
+    "package_id": "PKG10",
+    "package_type": "honeymoon",
+    "destination": "Udaipur",
+    "duration_days": 4,
+    "price": {
+      "solo": 20000,
+      "couple": 36000,
+      "family_4": 56000
+    },
+    "best_season": "oct-mar",
+    "day_plans": [
+      {
+        "day": 1,
+        "primary_plan": "Arrival and Lake Pichola boat ride",
+        "alternative_plans": ["Leisure evening", "Cafe visit"]
+      },
+      {
+        "day": 2,
+        "primary_plan": "City Palace and Jagdish Temple",
+        "alternative_plans": ["Museum visit", "Local market"]
+      },
+      {
+        "day": 3,
+        "primary_plan": "Saheliyon Ki Bari",
+        "alternative_plans": ["Spa session", "Photography walk"]
+      },
+      {
+        "day": 4,
+        "primary_plan": "Shopping and departure",
+        "alternative_plans": ["Sunrise viewpoint", "Rest"]
+      }
+    ]
+  },
+  {
+    "package_id": "PKG11",
+    "package_type": "adventure",
+    "destination": "Leh-Ladakh",
+    "duration_days": 6,
+    "price": {
+      "solo": 38000,
+      "couple": 70000,
+      "family_4": 110000
+    },
+    "best_season": "may-sep",
+    "day_plans": [
+      {
+        "day": 1,
+        "primary_plan": "Arrival and acclimatization",
+        "alternative_plans": ["Short walk", "Rest day"]
+      },
+      {
+        "day": 2,
+        "primary_plan": "Leh Palace and Shanti Stupa",
+        "alternative_plans": ["Local market", "Cafe hopping"]
+      },
+      {
+        "day": 3,
+        "primary_plan": "Nubra Valley via Khardung La",
+        "alternative_plans": ["Diskit Monastery", "Camel safari"]
+      },
+      {
+        "day": 4,
+        "primary_plan": "Pangong Lake visit",
+        "alternative_plans": ["Photography tour", "Leisure time"]
+      },
+      {
+        "day": 5,
+        "primary_plan": "Hemis Monastery",
+        "alternative_plans": ["River rafting", "Village walk"]
+      },
+      {
+        "day": 6,
+        "primary_plan": "Departure",
+        "alternative_plans": ["Shopping", "Rest"]
+      }
+    ]
+  },
+  {
+    "package_id": "PKG12",
+    "package_type": "pilgrimage",
+    "destination": "Tirupati",
+    "duration_days": 2,
+    "price": {
+      "solo": 9000,
+      "couple": 16000,
+      "family_4": 26000
+    },
+    "best_season": "sep-mar",
+    "day_plans": [
+      {
+        "day": 1,
+        "primary_plan": "Balaji Darshan",
+        "alternative_plans": ["Padmavathi Temple", "Rest"]
+      },
+      {
+        "day": 2,
+        "primary_plan": "Local temples and departure",
+        "alternative_plans": ["Shopping", "Leisure"]
+      }
+    ]
+  },
+  {
+    "package_id": "PKG13",
+    "package_type": "beach",
+    "destination": "Pondicherry",
+    "duration_days": 3,
+    "price": {
+      "solo": 14000,
+      "couple": 26000,
+      "family_4": 42000
+    },
+    "best_season": "oct-mar",
+    "day_plans": [
+      {
+        "day": 1,
+        "primary_plan": "Promenade Beach walk",
+        "alternative_plans": ["Cafe hopping", "Shopping"]
+      },
+      {
+        "day": 2,
+        "primary_plan": "Auroville and Serenity Beach",
+        "alternative_plans": ["Yoga session", "Leisure"]
+      },
+      {
+        "day": 3,
+        "primary_plan": "French Quarter visit and departure",
+        "alternative_plans": ["Museum visit", "Relax"]
+      }
+    ]
+  },
+  {
+    "package_id": "PKG14",
+    "package_type": "heritage",
+    "destination": "Agra",
+    "duration_days": 2,
+    "price": {
+      "solo": 10000,
+      "couple": 18000,
+      "family_4": 30000
+    },
+    "best_season": "oct-feb",
+    "day_plans": [
+      {
+        "day": 1,
+        "primary_plan": "Taj Mahal and Agra Fort",
+        "alternative_plans": ["Mehtab Bagh", "Shopping"]
+      },
+      {
+        "day": 2,
+        "primary_plan": "Fatehpur Sikri and departure",
+        "alternative_plans": ["Local market", "Leisure"]
+      }
+    ]
+  },
+  {
+    "package_id": "PKG15",
+    "package_type": "honeymoon",
+    "destination": "Coorg",
+    "duration_days": 3,
+    "price": {
+      "solo": 17000,
+      "couple": 32000,
+      "family_4": 48000
+    },
+    "best_season": "oct-mar",
+    "day_plans": [
+      {
+        "day": 1,
+        "primary_plan": "Arrival and coffee estate walk",
+        "alternative_plans": ["Resort leisure", "Photography"]
+      },
+      {
+        "day": 2,
+        "primary_plan": "Abbey Falls and Raja Seat",
+        "alternative_plans": ["Spa session", "Market visit"]
+      },
+      {
+        "day": 3,
+        "primary_plan": "Departure",
+        "alternative_plans": ["Sunrise view", "Rest"]
+      }
+    ]
+  },
+
+  {
+    "package_id": "PKG16",
+    "package_type": "adventure",
+    "destination": "Auli",
+    "duration_days": 4,
+    "price": {
+      "solo": 26000,
+      "couple": 48000,
+      "family_4": 76000
+    },
+    "best_season": "dec-mar",
+    "day_plans": [
+      {
+        "day": 1,
+        "primary_plan": "Arrival and ropeway ride",
+        "alternative_plans": ["Leisure walk", "Photography"]
+      },
+      {
+        "day": 2,
+        "primary_plan": "Skiing activities",
+        "alternative_plans": ["Snow trekking", "Rest"]
+      },
+      {
+        "day": 3,
+        "primary_plan": "Gurson Bugyal trek",
+        "alternative_plans": ["Camping", "Nature walk"]
+      },
+      {
+        "day": 4,
+        "primary_plan": "Departure",
+        "alternative_plans": ["Shopping", "Relax"]
+      }
+    ]
+  },
+  {
+    "package_id": "PKG17",
+    "package_type": "pilgrimage",
+    "destination": "Rameshwaram",
+    "duration_days": 3,
+    "price": {
+      "solo": 13000,
+      "couple": 24000,
+      "family_4": 38000
+    },
+    "best_season": "oct-mar",
+    "day_plans": [
+      {
+        "day": 1,
+        "primary_plan": "Ramanathaswamy Temple darshan",
+        "alternative_plans": ["Sea bath", "Rest"]
+      },
+      {
+        "day": 2,
+        "primary_plan": "Dhanushkodi visit",
+        "alternative_plans": ["Local temples", "Leisure"]
+      },
+      {
+        "day": 3,
+        "primary_plan": "Shopping and departure",
+        "alternative_plans": ["Museum", "Relax"]
+      }
+    ]
+  },
+
+  {
+    "package_id": "PKG18",
+    "package_type": "beach",
+    "destination": "Varkala",
+    "duration_days": 3,
+    "price": {
+      "solo": 15000,
+      "couple": 28000,
+      "family_4": 44000
+    },
+    "best_season": "oct-mar",
+    "day_plans": [
+      {
+        "day": 1,
+        "primary_plan": "Cliff beach walk",
+        "alternative_plans": ["Cafe hopping", "Sunset view"]
+      },
+      {
+        "day": 2,
+        "primary_plan": "Papanasam Beach",
+        "alternative_plans": ["Yoga session", "Spa"]
+      },
+      {
+        "day": 3,
+        "primary_plan": "Departure",
+        "alternative_plans": ["Shopping", "Leisure"]
+      }
+    ]
+  },
+
+  {
+    "package_id": "PKG19",
+    "package_type": "heritage",
+    "destination": "Madurai",
+    "duration_days": 2,
+    "price": {
+      "solo": 9000,
+      "couple": 17000,
+      "family_4": 28000
+    },
+    "best_season": "oct-mar",
+    "day_plans": [
+      {
+        "day": 1,
+        "primary_plan": "Meenakshi Temple",
+        "alternative_plans": ["Thirumalai Nayak Palace", "Rest"]
+      },
+      {
+        "day": 2,
+        "primary_plan": "Gandhi Museum and departure",
+        "alternative_plans": ["Shopping", "Leisure"]
+      }
+    ]
+  },
+
+  {
+    "package_id": "PKG20",
+    "package_type": "honeymoon",
+    "destination": "Alleppey",
+    "duration_days": 2,
+    "price": {
+      "solo": 16000,
+      "couple": 30000,
+      "family_4": 46000
+    },
+    "best_season": "oct-mar",
+    "day_plans": [
+      {
+        "day": 1,
+        "primary_plan": "Houseboat stay",
+        "alternative_plans": ["Backwater cruise", "Village walk"]
+      },
+      {
+        "day": 2,
+        "primary_plan": "Departure",
+        "alternative_plans": ["Sunrise view", "Relax"]
+      }
+    ]
+  },
+
+  {
+    "package_id": "PKG21",
+    "package_type": "adventure",
+    "destination": "Spiti Valley",
+    "duration_days": 7,
+    "price": {
+      "solo": 42000,
+      "couple": 78000,
+      "family_4": 125000
+    },
+    "best_season": "jun-sep",
+    "day_plans": [
+      {
+        "day": 1,
+        "primary_plan": "Arrival and acclimatization",
+        "alternative_plans": ["Rest", "Short walk"]
+      },
+      {
+        "day": 2,
+        "primary_plan": "Key Monastery",
+        "alternative_plans": ["Village visit", "Photography"]
+      },
+      {
+        "day": 3,
+        "primary_plan": "Kaza sightseeing",
+        "alternative_plans": ["Local cafes", "Rest"]
+      },
+      {
+        "day": 4,
+        "primary_plan": "Chandratal Lake",
+        "alternative_plans": ["Camping", "Nature walk"]
+      },
+      {
+        "day": 5,
+        "primary_plan": "Dhankar Monastery",
+        "alternative_plans": ["Trek", "Leisure"]
+      },
+      {
+        "day": 6,
+        "primary_plan": "Pin Valley",
+        "alternative_plans": ["Village walk", "Photography"]
+      },
+      {
+        "day": 7,
+        "primary_plan": "Departure",
+        "alternative_plans": ["Rest", "Shopping"]
+      }
+    ]
+  },
+
+  {
+    "package_id": "PKG22",
+    "package_type": "pilgrimage",
+    "destination": "Shirdi",
+    "duration_days": 2,
+    "price": {
+      "solo": 8000,
+      "couple": 15000,
+      "family_4": 24000
+    },
+    "best_season": "oct-mar",
+    "day_plans": [
+      {
+        "day": 1,
+        "primary_plan": "Sai Baba Darshan",
+        "alternative_plans": ["Temple visit", "Rest"]
+      },
+      {
+        "day": 2,
+        "primary_plan": "Local temples and departure",
+        "alternative_plans": ["Shopping", "Leisure"]
+      }
+    ]
+  },
+
+  {
+    "package_id": "PKG23",
+    "package_type": "beach",
+    "destination": "Gokarna",
+    "duration_days": 3,
+    "price": {
+      "solo": 14000,
+      "couple": 26000,
+      "family_4": 42000
+    },
+    "best_season": "oct-mar",
+    "day_plans": [
+      {
+        "day": 1,
+        "primary_plan": "Om Beach visit",
+        "alternative_plans": ["Kudle Beach", "Leisure"]
+      },
+      {
+        "day": 2,
+        "primary_plan": "Beach trekking",
+        "alternative_plans": ["Yoga", "Cafe hopping"]
+      },
+      {
+        "day": 3,
+        "primary_plan": "Departure",
+        "alternative_plans": ["Shopping", "Relax"]
+      }
+    ]
+  },
+
+  {
+    "package_id": "PKG24",
+    "package_type": "heritage",
+    "destination": "Khajuraho",
+    "duration_days": 2,
+    "price": {
+      "solo": 11000,
+      "couple": 20000,
+      "family_4": 32000
+    },
+    "best_season": "oct-feb",
+    "day_plans": [
+      {
+        "day": 1,
+        "primary_plan": "Western Group of Temples",
+        "alternative_plans": ["Museum visit", "Cultural show"]
+      },
+      {
+        "day": 2,
+        "primary_plan": "Eastern Group and departure",
+        "alternative_plans": ["Local market", "Leisure"]
+      }
+    ]
+  },
+
+  {
+    "package_id": "PKG25",
+    "package_type": "honeymoon",
+    "destination": "Darjeeling",
+    "duration_days": 4,
+    "price": {
+      "solo": 20000,
+      "couple": 36000,
+      "family_4": 56000
+    },
+    "best_season": "mar-may",
+    "day_plans": [
+      {
+        "day": 1,
+        "primary_plan": "Arrival and Mall Road walk",
+        "alternative_plans": ["Cafe hopping", "Rest"]
+      },
+      {
+        "day": 2,
+        "primary_plan": "Tiger Hill sunrise",
+        "alternative_plans": ["Tea estate visit", "Leisure"]
+      },
+      {
+        "day": 3,
+        "primary_plan": "Batasia Loop and Zoo",
+        "alternative_plans": ["Museum", "Photography"]
+      },
+      {
+        "day": 4,
+        "primary_plan": "Departure",
+        "alternative_plans": ["Shopping", "Relax"]
+      }
+    ]
+  },
+
+  {
+    "package_id": "PKG26",
+    "package_type": "adventure",
+    "destination": "Meghalaya",
+    "duration_days": 5,
+    "price": {
+      "solo": 28000,
+      "couple": 52000,
+      "family_4": 82000
+    },
+    "best_season": "oct-apr",
+    "day_plans": [
+      {
+        "day": 1,
+        "primary_plan": "Shillong sightseeing",
+        "alternative_plans": ["Cafe hopping", "Rest"]
+      },
+      {
+        "day": 2,
+        "primary_plan": "Cherrapunji waterfalls",
+        "alternative_plans": ["Cave exploration", "Photography"]
+      },
+      {
+        "day": 3,
+        "primary_plan": "Living root bridges trek",
+        "alternative_plans": ["Short trek", "Village walk"]
+      },
+      {
+        "day": 4,
+        "primary_plan": "Dawki river",
+        "alternative_plans": ["Boating", "Leisure"]
+      },
+      {
+        "day": 5,
+        "primary_plan": "Departure",
+        "alternative_plans": ["Shopping", "Relax"]
+      }
+    ]
+  },
+
+  {
+    "package_id": "PKG27",
+    "package_type": "pilgrimage",
+    "destination": "Amritsar",
+    "duration_days": 2,
+    "price": {
+      "solo": 9000,
+      "couple": 17000,
+      "family_4": 28000
+    },
+    "best_season": "oct-mar",
+    "day_plans": [
+      {
+        "day": 1,
+        "primary_plan": "Golden Temple visit",
+        "alternative_plans": ["Langar seva", "Rest"]
+      },
+      {
+        "day": 2,
+        "primary_plan": "Wagah Border and departure",
+        "alternative_plans": ["Museum visit", "Shopping"]
+      }
+    ]
+  },
+
+  {
+    "package_id": "PKG28",
+    "package_type": "beach",
+    "destination": "Lakshadweep",
+    "duration_days": 4,
+    "price": {
+      "solo": 50000,
+      "couple": 90000,
+      "family_4": 140000
+    },
+    "best_season": "oct-mar",
+    "day_plans": [
+      {
+        "day": 1,
+        "primary_plan": "Arrival and beach leisure",
+        "alternative_plans": ["Resort stay", "Photography"]
+      },
+      {
+        "day": 2,
+        "primary_plan": "Snorkeling",
+        "alternative_plans": ["Kayaking", "Glass boat ride"]
+      },
+      {
+        "day": 3,
+        "primary_plan": "Island hopping",
+        "alternative_plans": ["Fishing", "Relax"]
+      },
+      {
+        "day": 4,
+        "primary_plan": "Departure",
+        "alternative_plans": ["Shopping", "Leisure"]
+      }
+    ]
+  },
+
+  {
+    "package_id": "PKG29",
+    "package_type": "heritage",
+    "destination": "Mysuru",
+    "duration_days": 2,
+    "price": {
+      "solo": 10000,
+      "couple": 18000,
+      "family_4": 30000
+    },
+    "best_season": "oct-feb",
+    "day_plans": [
+      {
+        "day": 1,
+        "primary_plan": "Mysore Palace",
+        "alternative_plans": ["Zoo visit", "Shopping"]
+      },
+      {
+        "day": 2,
+        "primary_plan": "Chamundi Hills and departure",
+        "alternative_plans": ["Museum", "Leisure"]
+      }
+    ]
+  },
+
+  {
+    "package_id": "PKG30",
+    "package_type": "honeymoon",
+    "destination": "Shimla",
+    "duration_days": 4,
+    "price": {
+      "solo": 19000,
+      "couple": 35000,
+      "family_4": 54000
+    },
+    "best_season": "mar-jun",
+    "day_plans": [
+      {
+        "day": 1,
+        "primary_plan": "Mall Road walk",
+        "alternative_plans": ["Cafe hopping", "Rest"]
+      },
+      {
+        "day": 2,
+        "primary_plan": "Kufri sightseeing",
+        "alternative_plans": ["Yak ride", "Photography"]
+      },
+      {
+        "day": 3,
+        "primary_plan": "Jakhoo Temple",
+        "alternative_plans": ["Nature walk", "Leisure"]
+      },
+      {
+        "day": 4,
+        "primary_plan": "Departure",
+        "alternative_plans": ["Shopping", "Relax"]
+      }
+    ]
+  },
+  {
+    "package_id": "PKG31",
+    "package_type": "beach",
+    "destination": "Goa",
+    "duration_days": 2,
+    "price": {
+      "solo": 11000,
+      "couple": 20000,
+      "family_4": 34000
+    },
+    "best_season": "oct-mar",
+    "day_plans": [
+      {
+        "day": 1,
+        "primary_plan": "Arrival and North Goa sightseeing",
+        "alternative_plans": ["Beach leisure", "Cafe hopping"]
+      },
+      {
+        "day": 2,
+        "primary_plan": "Beach visit and departure",
+        "alternative_plans": ["Shopping", "Relax at hotel"]
+      }
+    ]
+  },
+  {
+    "package_id": "PKG32",
+    "package_type": "beach",
+    "destination": "Goa",
+    "duration_days": 6,
+    "price": {
+      "solo": 28000,
+      "couple": 52000,
+      "family_4": 82000
+    },
+    "best_season": "oct-mar",
+    "day_plans": [
+      {
+        "day": 1,
+        "primary_plan": "Arrival and leisure",
+        "alternative_plans": ["Beach walk", "Rest"]
+      },
+      {
+        "day": 2,
+        "primary_plan": "North Goa sightseeing",
+        "alternative_plans": ["Water sports", "Cafe hopping"]
+      },
+      {
+        "day": 3,
+        "primary_plan": "South Goa sightseeing",
+        "alternative_plans": ["Temple visit", "Spa"]
+      },
+      {
+        "day": 4,
+        "primary_plan": "Island trip",
+        "alternative_plans": ["Cruise ride", "Leisure"]
+      },
+      {
+        "day": 5,
+        "primary_plan": "Free day",
+        "alternative_plans": ["Shopping", "Beach hopping"]
+      },
+      {
+        "day": 6,
+        "primary_plan": "Departure",
+        "alternative_plans": ["Relax", "Cafe breakfast"]
+      }
+    ]
+  },
+  {
+    "package_id": "PKG33",
+    "package_type": "hills",
+    "destination": "Manali",
+    "duration_days": 3,
+    "price": {
+      "solo": 16000,
+      "couple": 30000,
+      "family_4": 48000
+    },
+    "best_season": "mar-jun",
+    "day_plans": [
+      {
+        "day": 1,
+        "primary_plan": "Arrival and Mall Road walk",
+        "alternative_plans": ["Cafe hopping", "Rest"]
+      },
+      {
+        "day": 2,
+        "primary_plan": "Solang Valley visit",
+        "alternative_plans": ["Snow activities", "Photography"]
+      },
+      {
+        "day": 3,
+        "primary_plan": "Departure",
+        "alternative_plans": ["Shopping", "Leisure breakfast"]
+      }
+    ]
+  },
+  {
+    "package_id": "PKG34",
+    "package_type": "hills",
+    "destination": "Ooty",
+    "duration_days": 5,
+    "price": {
+      "solo": 24000,
+      "couple": 44000,
+      "family_4": 70000
+    },
+    "best_season": "oct-jun",
+    "day_plans": [
+      {
+        "day": 1,
+        "primary_plan": "Arrival and Botanical Garden",
+        "alternative_plans": ["Ooty Lake", "Rest"]
+      },
+      {
+        "day": 2,
+        "primary_plan": "Doddabetta Peak",
+        "alternative_plans": ["Tea factory", "Photography"]
+      },
+      {
+        "day": 3,
+        "primary_plan": "Toy train ride",
+        "alternative_plans": ["Pine forest", "Leisure"]
+      },
+      {
+        "day": 4,
+        "primary_plan": "Coonoor sightseeing",
+        "alternative_plans": ["Nature walk", "Cafe hopping"]
+      },
+      {
+        "day": 5,
+        "primary_plan": "Departure",
+        "alternative_plans": ["Shopping", "Relax"]
+      }
+    ]
+  },
+  {
+    "package_id": "PKG35",
+    "package_type": "honeymoon",
+    "destination": "Munnar",
+    "duration_days": 5,
+    "price": {
+      "solo": 26000,
+      "couple": 48000,
+      "family_4": 74000
+    },
+    "best_season": "sep-mar",
+    "day_plans": [
+      {
+        "day": 1,
+        "primary_plan": "Arrival and resort leisure",
+        "alternative_plans": ["Tea garden walk", "Rest"]
+      },
+      {
+        "day": 2,
+        "primary_plan": "Eravikulam National Park",
+        "alternative_plans": ["Nature walk", "Photography"]
+      },
+      {
+        "day": 3,
+        "primary_plan": "Mattupetty Dam",
+        "alternative_plans": ["Boating", "Spa"]
+      },
+      {
+        "day": 4,
+        "primary_plan": "Top Station",
+        "alternative_plans": ["Sunrise view", "Leisure"]
+      },
+      {
+        "day": 5,
+        "primary_plan": "Departure",
+        "alternative_plans": ["Shopping", "Relax"]
+      }
+    ]
+  },
+  {
+    "package_id": "PKG36",
+    "package_type": "heritage",
+    "destination": "Jaipur",
+    "duration_days": 5,
+    "price": {
+      "solo": 23000,
+      "couple": 42000,
+      "family_4": 68000
+    },
+    "best_season": "oct-feb",
+    "day_plans": [
+      {
+        "day": 1,
+        "primary_plan": "Amber Fort",
+        "alternative_plans": ["Jaigarh Fort", "Photography"]
+      },
+      {
+        "day": 2,
+        "primary_plan": "City Palace",
+        "alternative_plans": ["Museum", "Local market"]
+      },
+      {
+        "day": 3,
+        "primary_plan": "Hawa Mahal",
+        "alternative_plans": ["Albert Hall", "Cafe hopping"]
+      },
+      {
+        "day": 4,
+        "primary_plan": "Cultural village visit",
+        "alternative_plans": ["Shopping", "Leisure"]
+      },
+      {
+        "day": 5,
+        "primary_plan": "Departure",
+        "alternative_plans": ["Heritage walk", "Relax"]
+      }
+    ]
+  },
+  {
+    "package_id": "PKG37",
+    "package_type": "adventure",
+    "destination": "Rishikesh",
+    "duration_days": 5,
+    "price": {
+      "solo": 22000,
+      "couple": 40000,
+      "family_4": 64000
+    },
+    "best_season": "feb-jun",
+    "day_plans": [
+      {
+        "day": 1,
+        "primary_plan": "Arrival and Ganga Aarti",
+        "alternative_plans": ["Temple visit", "Leisure"]
+      },
+      {
+        "day": 2,
+        "primary_plan": "River rafting",
+        "alternative_plans": ["Yoga session", "Cafe hopping"]
+      },
+      {
+        "day": 3,
+        "primary_plan": "Bungee jumping",
+        "alternative_plans": ["Cliff jumping", "Rest"]
+      },
+      {
+        "day": 4,
+        "primary_plan": "Nature trek",
+        "alternative_plans": ["Meditation", "Spa"]
+      },
+      {
+        "day": 5,
+        "primary_plan": "Departure",
+        "alternative_plans": ["Shopping", "Relax"]
+      }
+    ]
+  },
+  {
+    "package_id": "PKG38",
+    "package_type": "pilgrimage",
+    "destination": "Varanasi",
+    "duration_days": 5,
+    "price": {
+      "solo": 20000,
+      "couple": 36000,
+      "family_4": 58000
+    },
+    "best_season": "oct-mar",
+    "day_plans": [
+      {
+        "day": 1,
+        "primary_plan": "Kashi Vishwanath Temple",
+        "alternative_plans": ["Ghats visit", "Rest"]
+      },
+      {
+        "day": 2,
+        "primary_plan": "Ganga Aarti",
+        "alternative_plans": ["Boat ride", "Meditation"]
+      },
+      {
+        "day": 3,
+        "primary_plan": "Sarnath visit",
+        "alternative_plans": ["Museum", "Leisure"]
+      },
+      {
+        "day": 4,
+        "primary_plan": "Temple hopping",
+        "alternative_plans": ["Heritage walk", "Shopping"]
+      },
+      {
+        "day": 5,
+        "primary_plan": "Departure",
+        "alternative_plans": ["Relax", "Rest"]
+      }
+    ]
+  },
+  {
+    "package_id": "PKG39",
+    "package_type": "beach",
+    "destination": "Pondicherry",
+    "duration_days": 5,
+    "price": {
+      "solo": 22000,
+      "couple": 40000,
+      "family_4": 65000
+    },
+    "best_season": "oct-mar",
+    "day_plans": [
+      {
+        "day": 1,
+        "primary_plan": "Promenade Beach walk",
+        "alternative_plans": ["Cafe hopping", "Leisure"]
+      },
+      {
+        "day": 2,
+        "primary_plan": "Auroville visit",
+        "alternative_plans": ["Yoga session", "Rest"]
+      },
+      {
+        "day": 3,
+        "primary_plan": "Serenity Beach",
+        "alternative_plans": ["Surfing", "Relax"]
+      },
+      {
+        "day": 4,
+        "primary_plan": "French Quarter",
+        "alternative_plans": ["Museum visit", "Shopping"]
+      },
+      {
+        "day": 5,
+        "primary_plan": "Departure",
+        "alternative_plans": ["Leisure", "Cafe breakfast"]
+      }
+    ]
+  },
+  {
+    "package_id": "PKG40",
+    "package_type": "honeymoon",
+    "destination": "Udaipur",
+    "duration_days": 2,
+    "price": {
+      "solo": 14000,
+      "couple": 26000,
+      "family_4": 42000
+    },
+    "best_season": "oct-mar",
+    "day_plans": [
+      {
+        "day": 1,
+        "primary_plan": "Lake Pichola boat ride",
+        "alternative_plans": ["Leisure evening", "Cafe visit"]
+      },
+      {
+        "day": 2,
+        "primary_plan": "City Palace and departure",
+        "alternative_plans": ["Shopping", "Relax"]
+      }
+    ]
+  }
+]
+
+
+
+ 
