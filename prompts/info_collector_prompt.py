@@ -42,13 +42,22 @@ Your sole responsibility is to extract user travel preferences from conversation
    • family_N → "family of N", "N people" (where N = 2,3,4,5)
    • group → "friends", "colleagues", "large group"
 
+6. **Activities** - Extract as a list of activities the user wants to do:
+   • Extract specific activities mentioned (e.g., "scuba diving", "trekking", "sightseeing")
+   • Normalize activity names (e.g., "snorkeling" not "snorkelling")
+   • Common activities: sightseeing, beach activities, water sports, scuba diving, snorkeling, parasailing, jet skiing, surfing, trekking, hiking, camping, rock climbing, paragliding, rafting, kayaking, temple visits, cultural tours, heritage walks, photography, shopping, spa, nightlife, adventure sports, wildlife safari, bird watching, cycling, food tours
+   • Return as a list of strings
+   • If no activities mentioned, return empty list []
+   • Extract ALL activities mentioned, even if multiple
+
 **CRITICAL INSTRUCTIONS:**
 
 ✓ Only extract EXPLICITLY mentioned information
-✓ If information is unclear or ambiguous, return null for that field
+✓ If information is unclear or ambiguous, return null for that field (empty list [] for activities)
 ✓ Do NOT make assumptions or inferences
 ✓ If user corrects previous information, extract the NEW value
 ✓ Ignore conversational filler - focus on facts only
+✓ For activities, extract ALL mentioned activities as a list
 ✓ Set confidence based on clarity:
   - high: Clear, explicit mentions
   - medium: Implied but reasonably certain
@@ -64,8 +73,35 @@ Output:
   "budget": 50000.0,
   "duration_days": 5,
   "traveler_type": "family_4",
+  "activities": [],
   "confidence": "high",
   "notes": null
+}}
+
+Input: "I want to go scuba diving and parasailing in Goa"
+Output:
+{{
+  "package_type": "beach",
+  "destination": "Goa",
+  "budget": null,
+  "duration_days": null,
+  "traveler_type": null,
+  "activities": ["scuba diving", "parasailing"],
+  "confidence": "high",
+  "notes": null
+}}
+
+Input: "We also want to do water sports, sightseeing, and try local food"
+Output:
+{{
+  "package_type": null,
+  "destination": null,
+  "budget": null,
+  "duration_days": null,
+  "traveler_type": null,
+  "activities": ["water sports", "sightseeing", "food tours"],
+  "confidence": "high",
+  "notes": "Added water sports, sightseeing, and food tours"
 }}
 
 Input: "Actually, make that 7 days instead"
@@ -76,6 +112,7 @@ Output:
   "budget": null,
   "duration_days": 7,
   "traveler_type": null,
+  "activities": [],
   "confidence": "high",
   "notes": "Updated duration only"
 }}
@@ -88,11 +125,12 @@ Output:
   "budget": null,
   "duration_days": null,
   "traveler_type": null,
+  "activities": [],
   "confidence": "low",
   "notes": "Too vague - no specific preferences mentioned"
 }}
 
-Input: "Honeymoon trip to Manali, just the two of us"
+Input: "Honeymoon trip to Manali, just the two of us, we love trekking and want to do paragliding"
 Output:
 {{
   "package_type": "honeymoon",
@@ -100,10 +138,24 @@ Output:
   "budget": null,
   "duration_days": null,
   "traveler_type": "couple",
+  "activities": ["trekking", "paragliding"],
+  "confidence": "high",
+  "notes": null
+}}
+
+Input: "We want adventure activities like rafting, rock climbing and camping"
+Output:
+{{
+  "package_type": "adventure",
+  "destination": null,
+  "budget": null,
+  "duration_days": null,
+  "traveler_type": null,
+  "activities": ["rafting", "rock climbing", "camping"],
   "confidence": "high",
   "notes": null
 }}
 
 **YOUR TASK:**
 
-Analyze the provided conversation context and extract structured preferences. Be conservative - when in doubt, return null."""
+Analyze the provided conversation context and extract structured preferences. Be conservative - when in doubt, return null (or empty list for activities)."""
