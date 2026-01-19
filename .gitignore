@@ -1,9 +1,24 @@
+# Environment
 .env
 .venv/
-__pycache__/
-*.pyc
-
-pyproject.toml
 .python-version
-uv.lock
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+
+
+
+
+
 
