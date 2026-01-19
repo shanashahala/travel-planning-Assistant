@@ -2,6 +2,7 @@
 .env
 .venv/
 .python-version
+
 # Python
 __pycache__/
 *.py[cod]
@@ -11,14 +12,12 @@ __pycache__/
 env/
 venv/
 ENV/
+
 # Distribution / packaging
 dist/
 build/
 *.egg-info/
 
-
-
-
-
-
-
+# Lock files
+uv.lock
+pyproject.toml
