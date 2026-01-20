@@ -91,7 +91,7 @@ def calculate_similarity_score(preferences: Dict[str, Any], package: Dict[str, A
             pass
             
     # 5. Activity match
-    pref_activities = preferences.get('activity', [])
+    pref_activities = preferences.get('activities', [])
     if isinstance(pref_activities, str):
         pref_activities = [pref_activities]
         

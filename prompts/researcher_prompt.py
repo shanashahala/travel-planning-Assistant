@@ -1,52 +1,40 @@
 from graphs.state import AgentState
+import json
 
-# system prompt for researcher agent
 def researcher_prompt(state: AgentState):
     # Safely extract preferences from state
     p_type = state.get('package_type', 'any')
     dest = state.get('destination', 'any')
-    dur = state.get('duration_days') or state.get('duration', 'any')
+    dur = state.get('duration_days', 'any')
     bud = state.get('budget', 'any')
-    act = state.get('activity', [])
+    act = state.get('activities', [])
     trav_type = state.get('traveler_type', 'any')
 
     return f"""
-    You are a professional travel researcher agent. Your task is to filter available travel packages based on the user's specific preferences.
-    
-    User Preferences:
+    You are a professional Travel Researcher and Filtering Specialist. Your goal is to identify the best candidate packages from our dataset based on user preferences.
+
+    USER PREFERENCES:
     - Package Type: {p_type}
     - Destination: {dest}
-    - Duration: {dur}
+    - Duration: {dur} days
     - Budget: {bud}
     - Traveler Type: {trav_type}
-    - Preferred Activities: {", ".join(act) if act else "Not specified"}
+    - Activities: {", ".join(act) if act else "None specified"}
 
-    Context:
-    The matching function has already identified the most similar packages from our database (packages.json) based on these preferences. 
-    Your job is to review these results and ensure they are appropriate for the user.
+    FILTERING PRIORITY:
+    - **PRIMARY FILTERS**: EXACT match on "Package Type" and "Destination". These must be prioritized.
+    - **SECONDARY CONSIDERATIONS**: Proximity to Budget, Duration, Traveler Type, and alignment with requested Activities.
 
-    Mandatory Primary Filters:
-    - Destination: {dest}
-    - Package Type: {p_type}
+    CANDIDATE POOL (Pre-matched samples):
+    {json.dumps(state.get('packages', []), indent=2)}
 
-    Secondary Considerations:
-    - Budget: {bud}
-    - Duration: {dur}
-    - Traveler Type: {trav_type}
+    INSTRUCTIONS:
+    - Select the best matching packages from the candidate pool.
+    - If exact matches for the Primary Filters are found, include them first.
+    - If no exact matches exist, find the closest alternatives that match at least the Package Type.
+    - Ensure your output is a strictly formatted JSON list of whole package objects.
 
-    Available Packages (Most Similar):
-    {state.get('package', [])}
-    
-    Instructions:
-    1. Prioritize matching the **Destination** and **Package Type**.
-    2. If an exact destination match is not found, evaluate if the "similar" packages provided are good alternatives.
-    3. Further filter or highlight packages that align with the **Budget**, **Duration**, and **Traveler Type**.
-    4. If activities are specified, look for packages that include those activities in their day plans.
-    5. Return the final filtered list of packages in a structured JSON format.
-
-    Output Format:
-    Return ONLY a JSON list of package dictionaries. No extra text.
+    OUTPUT FORMAT:
+    Return ONLY a JSON list of dictionaries (the package objects). No preamble or reasoning.
+    [ {{...}}, {{...}} ]
     """.strip()
-
-
-

@@ -1,40 +1,46 @@
 from graphs.state import AgentState
+import json
 
 def day_planner_prompt(state: AgentState) -> str:
     selected_package = state.get('selected_package', {})
+    user_duration = state.get('duration_days')
+    pkg_duration = selected_package.get('duration_days')
     use_alternative = state.get('use_alternative_plan', False)
-    
-    plan_type = "ALTERNATIVE" if use_alternative else "PRIMARY"
-    
-    prompt = f"""You are a professional travel itinerary planner. 
-    Based on the selected package, create a beautiful and detailed day-by-day itinerary.
+    activities = state.get('activities', [])
 
-    Selected Package:
-    {selected_package}
+    return f"""
+    You are a Professional Itinerary Architect. Your task is to build a day-by-day plan based on the selected package and user preferences.
 
-    Planning Mode: {plan_type}
-    
-    Instructions:
-    1. If Planning Mode is PRIMARY: Use only the 'primary_plan' from each day in the 'day_plans'.
-    2. If Planning Mode is ALTERNATIVE: Use the 'alternative_plans' from each day in the 'day_plans'. 
-       If multiple alternatives exist, pick the most interesting one that hasn't been suggested in previous messages.
-       If alternative plans are exhausted for any day, notify the user.
-    3. Return your response in JSON format with the following structure:
+    PACKAGE DATA:
+    {json.dumps(selected_package, indent=2)}
+
+    USER PREFERENCES:
+    - Target Duration: {user_duration} days
+    - Package Original Duration: {pkg_duration} days
+    - Activities of Interest: {", ".join(activities) if activities else "General sightseeing"}
+    - Mode: {"BUILD WITH ALTERNATIVE PLANS" if use_alternative else "BUILD WITH PRIMARY PLANS"}
+
+    ADAPTATION RULES (CRITICAL):
+    1. **Strict Dataset Adherence**: ONLY use activities mentioned in the 'primary_plan' or 'alternative_plans' of the package. NEVER hallucinate activities from outside the provided package data.
+    2. **Duration Adaptation**: 
+       - If the user's requested duration ({user_duration}) differs from the package duration ({pkg_duration}):
+         - To Shorten: Select the most representative days from the package to fit the requested {user_duration} days.
+         - To Lengthen: Distribute the available 'primary_plan' and 'alternative_plans' across {user_duration} days. You can split one day's activities into two or use alternatives to fill the extra time.
+    3. **Activity Match**: Prioritize days or plans that match the user's "Activities of Interest".
+    4. **Plan Selection**:
+       - If Mode is PRIMARY: Start with the 'primary_plan' for each day.
+       - If Mode is ALTERNATIVE: Swap activities with those found in 'alternative_plans'.
+
+    OUTPUT FORMAT:
+    Return ONLY a JSON object:
     {{
         "itinerary": [
             {{
-                "day": integer,
-                "plan": "string",
-                "activities_detail": "string"
-            }}
+                "day": 1,
+                "plan": "Detailed description of activities for the day"
+            }},
+            ...
         ],
-        "alternatives_available": boolean,
-        "message": "string (A friendly summary for the user)"
+        "message": "A professional, warm summary of the {user_duration}-day itinerary."
     }}
-
-    Rules:
-    - Focus strictly on the {plan_type} plans provided in the package.
-    - Make the activities sound exciting and professional.
-    - 'alternatives_available' should be true if there are more options in 'alternative_plans' that haven't been used.
-    """
-    return prompt
+    """.strip()

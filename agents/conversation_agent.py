@@ -36,15 +36,18 @@ def conversation_agent(state: AgentState):
         data = json.loads(content)
         new_state = data.get("current_state", state.get("current_state", "greeting"))
         ai_message = data.get("message", "I'm here to help with your travel plans!")
+        package_confirmed = data.get("package_confirmed")
     except Exception as e:
         print(f"Error parsing conversation JSON: {e}")
         # Fallback
         new_state = state.get("current_state", "greeting")
-        ai_message = content # Use raw content if JSON fails
+        ai_message = content 
+        package_confirmed = None
     
     # 6. Return updated state and message
     from langchain_core.messages import AIMessage
     return {
         "messages": [AIMessage(content=ai_message)],
-        "current_state": new_state
+        "current_state": new_state,
+        "package_confirmed": package_confirmed
     }

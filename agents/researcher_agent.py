@@ -15,7 +15,7 @@ def researcher_agent(state: AgentState):
     """This agent researches the packages based on the user preferences or finds similar ones"""
     
     # 1. Load all packages if not already in state
-    all_packages = state.get('package', [])
+    all_packages = state.get('packages', [])
     if not all_packages:
         # Load from local dataset/Packages.json
         base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -33,7 +33,7 @@ def researcher_agent(state: AgentState):
     
     # Create a temporary state for the prompt with filtered packages
     temp_state = state.copy()
-    temp_state['package'] = similar_packages
+    temp_state['packages'] = similar_packages
 
     # 3. Use LLM to refine the selection and format the output
     llm = ChatGroq(model_name="llama-3.3-70b-versatile", groq_api_key=groq_api_key)

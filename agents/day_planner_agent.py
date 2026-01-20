@@ -1,6 +1,7 @@
 import os
 import json
 import logging
+from typing import Dict, Any
 from langchain_groq import ChatGroq
 from langchain_core.messages import AIMessage
 from prompts.day_planner_prompts import day_planner_prompt
@@ -11,10 +12,12 @@ load_dotenv()
 
 logger = logging.getLogger("day_planner_agent")
 
-def day_planner_agent(state: AgentState) -> AgentState:
+def day_planner_agent(state: AgentState) -> Dict[str, Any]:
     """
     Agent responsible for preparing the day-by-day itinerary.
     """
+    logger.info("DayPlannerAgent invoked")
+    
     try:
         api_key = os.getenv("GROQ_API_KEY")
         if not api_key:
@@ -31,32 +34,37 @@ def day_planner_agent(state: AgentState) -> AgentState:
         
         logger.info(f"Day Planner Raw Response: {response.content}")
 
+        content = response.content.strip()
+        
+        # Robust JSON extraction
+        if "```json" in content:
+            content = content.split("```json")[1].split("```")[0].strip()
+        elif "```" in content:
+            content = content.split("```")[1].split("```")[0].strip()
+        
         try:
-            content = response.content.strip()
-            if content.startswith("```json"):
-                content = content[7:-3].strip()
-            elif content.startswith("```"):
-                content = content[3:-3].strip()
-            
             parsed_data = json.loads(content)
             
-            # Store the plan in the state
-            state["day_plan"] = parsed_data.get("itinerary", [])
+            day_plan = parsed_data.get("itinerary", [])
+            msg = parsed_data.get("message", "Your itinerary is ready!")
             
-            # Check if alternatives are exhausted
-            if state.get("use_alternative_plan") and not parsed_data.get("alternatives_available"):
-                msg = "I've suggested all possible alternatives for this package."
-            else:
-                msg = parsed_data.get("message", "Your itinerary is ready!")
+            logger.info(f"Day plan generated with {len(day_plan)} days.")
+            
+            return {
+                "day_plan": day_plan,
+                "current_state": "plan_review",
+                "messages": [AIMessage(content=msg)]
+            }
 
-            state["messages"].append(AIMessage(content=msg))
-
-        except json.JSONDecodeError:
-            logger.error("Failed to parse Day Planner LLM response")
-            state["messages"].append(AIMessage(content="Error generating the itinerary."))
-
-        return state
+        except json.JSONDecodeError as e:
+            logger.error(f"Failed to parse Day Planner LLM response: {e}")
+            return {
+                "current_state": "plan_review",
+                "messages": [AIMessage(content="I encountered an issue generating your itinerary. Let me try again.")]
+            }
 
     except Exception as e:
         logger.error(f"Day Planner Error: {e}")
-        return state
+        return {
+            "messages": [AIMessage(content=f"Error generating itinerary: {str(e)}")]
+        }
